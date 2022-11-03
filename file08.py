@@ -15,7 +15,6 @@ def main(data:str):
                 max = int(i)
     return max
 
-
 # Read data from file
 
 data = open('txt_file/data08.txt','r').read()
