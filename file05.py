@@ -6,5 +6,17 @@ def main(data:str):
     Returns:
         list: return answer
     """
-    
+    intejer = 0
+    string = 0
+    for i in data:
+        if i.isdigit():
+            intejer += 1
+
+        else:
+            string += 1
+
+    return [intejer, string]
 # Read data from file
+
+data = open("txt_file/data05.txt", "r").read()
+print(main(data))
